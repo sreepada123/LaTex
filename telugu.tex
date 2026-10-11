@@ -1,0 +1,28 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+
+% Telugu font
+\newfontfamily\telugufont[
+  Script=Telugu
+]{Noto Serif Telugu}
+
+\begin{document}
+
+\section*{Introduction to LaTeX}
+
+This is in English.
+
+{\telugufont
+
+లేటెక్స్ అనేది శాస్త్రీయ మరియు
+సాంకేతిక పత్రాలను తయారు చేయడానికి
+ఉపయోగించే ఒక వ్యవస్థ.
+
+ఓవర్‌లీఫ్ సహాయంతో తెలుగు మరియు
+ఆంగ్ల భాషలలో పత్రాలను తయారు చేయవచ్చు.
+}
+
+\end{document}

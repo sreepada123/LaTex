@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+% Section numbering
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+% Define a custom page style
+\fancypagestyle{mystyle}{
+    \fancyhf{}
+    % HEADER
+    \fancyhead[L]{\small\bfseries
+        MVSR ENGINEERING COLLEGE}
+    \fancyhead[R]{\small
+        DEPARTMENT OF ECE}
+    % FOOTER
+    \fancyfoot[L]{\small PROJECT REPORT}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{\small 2026-27}
+    % Horizontal lines
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+}
+% Apply to ordinary pages
+\pagestyle{mystyle}
+% Apply to chapter-opening pages
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{\small\bfseries
+        MVSR ENGINEERING COLLEGE}
+    \fancyhead[R]{\small
+        DEPARTMENT OF ECE}
+    \fancyfoot[L]{\small PROJECT REPORT}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{\small 2026-27}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+}
+\begin{document}
+\chapter{What is Microprocessor ?}
+A microprocessor is a programmable electronics chip that has computing and decision making capabilities similar to central processing unit of a computer. Any microprocessor based systems having limited number of resources are called microcomputers. Nowadays, microprocessor can be seen in almost all types of electronics devices like mobile phones, printers, washing machines etc. Microprocessors are also used in advanced applications like
+radars, satellites and flights. Due to the rapid advancements in electronic industry and large scale integration of devices results in a significant cost reduction and increase application of
+microprocessors and their derivatives.
+\section{Some filler text}
+A typical microprocessor consists of arithmetic and logic unit (ALU) in association with control unit to process the instruction  execution. Almost all the microprocessors are based on the principle of store-program concept. In store-program concept, programs or
+instructions are sequentially stored in the memory locations that are to be executed. To do any task using a microprocessor, it is to be programmed by the user. So the programmer must have idea about its internal resources, features and supported instructions. Each
+microprocessor has a set of instructions, a list which is provided by the microprocessor manufacturer. 
+\section{Working of Microprocessor}
+Microprocessor communicates and operates in binary numbers 0 and 1. The set of instructions in the form of binary patterns is called a machine language and it is difficult for us to understand. Therefore, the binary patterns are given abbreviated names, called
+mnemonics, which forms the assembly language. The conversion of assembly-level language into binary machine-level language is done by using an application called assembler.
+
+\subsection{Plenty of filler text}
+\end{document}
