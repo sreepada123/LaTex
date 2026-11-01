@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{lmodern}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+%\usepackage{hyperref}
+
+% Color definitions matched from the original document
+\definecolor{bordercyan}{RGB}{0, 160, 185}
+\definecolor{plumtitle}{RGB}{145, 20, 100}
+\definecolor{brightred}{RGB}{235, 10, 10}
+\definecolor{deepnavy}{RGB}{20, 45, 140}
+
+%hypersetup{
+%    colorlinks=true,
+%    urlcolor=deepnavy
+%}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Double rounded-corner cyan border
+\begin{tikzpicture}[remember picture, overlay]
+    % Outer rounded border
+    \draw[bordercyan, line width=1.8pt, rounded corners=14pt]
+        ([xshift=1.0cm, yshift=-1.0cm]current page.north west) 
+        rectangle 
+        ([xshift=-1.0cm, yshift=1.0cm]current page.south east);
+        
+    % Inner rounded border
+    \draw[bordercyan, line width=0.8pt, rounded corners=11pt]
+        ([xshift=1.15cm, yshift=-1.15cm]current page.north west) 
+        rectangle 
+        ([xshift=-1.15cm, yshift=1.15cm]current page.south east);
+\end{tikzpicture}
+
+\begin{center}
+    \vspace*{0.2cm}
+
+    % Header Section
+    {\fontsize{15}{18}\selectfont \textbf{\textcolor{plumtitle}{PROJECT WORK REPORT}}}\\[0.35cm]
+    {\large \textbf{\textcolor{plumtitle}{On}}}\\[0.45cm]
+    {\fontsize{14}{18}\selectfont \textbf{\textcolor{plumtitle}{DESIGN OF ATTACK RESISTANT}}}\\[0.3cm]
+    {\fontsize{14}{18}\selectfont \textbf{\textcolor{plumtitle}{CIRCUITS FOR CRYPTOGRAPHY}}}\\[0.45cm]
+    {\large \textbf{\textcolor{plumtitle}{(A-7)}}}
+
+    \vspace{1.8cm}
+
+    % Student Details Section
+    \begin{minipage}{0.88\textwidth}
+        \large\bfseries\textcolor{brightred}{%
+        \begin{tabular}{@{}l@{\hspace{2.2cm}}r@{}}
+            B.MEGHANA REDDY        & (2451-22-735-002) \\[0.45cm]
+            M.SREE HARSHITH PHANI  & (2451-22-735-005) \\[0.45cm]
+            P.MANAS VISWANAUTH     & (2451-22-735-036)
+        \end{tabular}%
+        }
+    \end{minipage}
+
+    \vspace{1.6cm}
+
+    % Guide Section
+    {\fontsize{13}{16}\selectfont \textbf{\textcolor{plumtitle}{Under the guidance of}}}\\[0.4cm]
+    {\fontsize{13}{16}\selectfont \textbf{\textcolor{brightred}{Er. NULI NAMASSIVAYA, Head, ECED}}}
+
+    \vspace{0.7cm}
+
+    % College Logo
+    % Replace 'mvsr_logo.png' with your actual image filename
+    \includegraphics[width=3.6cm, height=3.6cm, keepaspectratio]{MVSR.png}
+
+    \vspace{0.9 cm}
+
+    % Institutional Details
+    {\normalsize \textbf{\textcolor{plumtitle}{Department of Electronics \& Communication Engineering}}}\\[0.18cm]
+    {\fontsize{15}{18}\selectfont \textbf{\textcolor{brightred}{MVSR ENGINEERING COLLEGE}}}\\[0.15cm]
+    {\small \textbf{\textcolor{plumtitle}{(An Autonomous Institution)}}}\\[0.15cm]
+    {\footnotesize \textbf{\textcolor{plumtitle}{(Sponsored By Matrusri Education Society,Estd.1980) Nadergul (P.O.), Balapur (Mandal)}}}\\[0.12cm]
+    {\footnotesize \textbf{\textcolor{plumtitle}{Hyderabad -- 501510, Telangana}}}\\[0.15cm]
+    {\medium {www.mvsrec.edu.in}}\\[0.45cm]
+    {\large \textbf{\textcolor{plumtitle}{2025-2026}}}
+
+\end{center}
+
+\end{document}

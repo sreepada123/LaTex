@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm, bottom=2.2cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{tabularx}
+\usepackage{array}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Running Header with double horizontal rule[cite: 5]
+\noindent
+{\small\textbf{MVSREC}} \hfill {\small\textbf{PROJECT WORK-2 REPORT}}\\[-0.2cm]
+\noindent\rule{\textwidth}{1.8pt}\\[-0.55cm]
+\noindent\rule{\textwidth}{0.6pt}
+
+\vspace{0.6cm}
+
+% Heading[cite: 5]
+\begin{center}
+    {\fontsize{14}{17}\selectfont \textbf{TABLE OF CONTENTS}}
+\end{center}
+
+\vspace{0.4cm}
+
+% Table of Contents Table[cite: 5]
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}clc@{}}
+    \textbf{S. No} & \multicolumn{1}{c}{\textbf{Title}} & \textbf{Page No.} \\[0.25cm]
+    1  & Acknowledgement                                               & iii  \\
+    2  & Declaration                                                   & iv   \\
+    3  & Abstract                                                      & v    \\
+    4  & List of Figures                                               & vii  \\
+    5  & List of Tables                                                & viii \\
+    6  & List of Abbreviations                                         & ix   \\[0.15cm]
+    7  & \textbf{CHAPTER-I INTRODUCTION}                               &      \\
+       & \quad 1.1 Introduction                                        & 11   \\
+       & \quad 1.2 Problem Statement                                   & 13   \\
+       & \quad 1.3 Objectives                                          & 14   \\
+       & \quad 1.4 Scope                                               & 14   \\[0.15cm]
+    8  & \textbf{CHAPTER-II LITERATURE SURVEY}                         &      \\
+       & \quad 2.1 Overview                                            & 16   \\
+       & \quad 2.2 Literature Survey                                   & 17   \\[0.15cm]
+    9  & \textbf{CHAPTER-III EXISTING SYSTEM}                          &      \\
+       & \quad 3.1 Security Challenges in                              & 21   \\
+       & conventional AES Hardware Design                              &      \\[0.15cm]
+    10 & \textbf{CHAPTER-IV PROPOSED SYSTEM}                           &      \\
+       & \quad 4.1 Proposed Methodology                                & 24   \\
+       & \quad 4.2 Secure BDD Logic \& Verification                    & 28   \\
+       & \quad 4.3 SPI based Inter-FPGA Communication System           & 30   \\
+       & \quad 4.4 System Design                                       & 33   \\
+       & \quad 4.5 Working Principle                                   & 39   \\[0.15cm]
+    11 & \textbf{CHAPTER-V HARDWARE,SOFTWARE}                          &      \\
+       & \textbf{REQUIREMENTS AND SOURCE CODES}                        &      \\
+       & \quad 5.1 Hardware Tools Used                                 & 43   \\
+       & \quad 5.2 Software Tools Used                                 & 46   \\
+       & \quad 5.3 Source Codes                                        & 49   \\[0.15cm]
+    12 & \textbf{CHAPTER-VI RESULTS}                                   &      \\
+       & \quad 6.1 Simulation Result                                   & 57   \\
+       & \quad 6.2 FPGA implementation Result                          & 60   \\
+       & \quad 6.3 SPI communication Result                            & 61   \\
+       & \quad 6.4 Power and Timing Analysis                           & 62   \\
+       & \quad 6.5 CPA Analysis of conventional S-box                  & 65   \\
+\end{tabular*}
+
+% Push footer to the bottom
+\vfill
+
+% Running Footer with horizontal rule[cite: 5]
+\noindent\rule{\textwidth}{0.8pt}\\[0.15cm]
+\noindent
+{\small\textbf{B.E.(ECE)-VIII Sem. `A' Sec.}} \hfill {\small\textbf{vii}} \hfill {\small\textbf{2451-22-735-002,005,036}}
+
+\end{document}

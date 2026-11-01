@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2.2cm, bottom=2.5cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{setspace}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Running Header with double horizontal rule
+\noindent
+{\small\textbf{MVSREC}} \hfill {\small\textbf{PROJECT WORK-2 REPORT}}\\[-0.2cm]
+\noindent\rule{\textwidth}{1.8pt}\\[-0.55cm]
+\noindent\rule{\textwidth}{0.6pt}
+
+\vspace{1.0cm}
+
+% Heading
+\begin{center}
+    {\fontsize{14}{17}\selectfont \textbf{ABSTRACT}}
+\end{center}
+
+\vspace{0.6cm}
+
+% Main Content
+\begin{spacing}{1.45}
+\noindent
+Side-channel attacks (SCAs) pose a major threat to cryptographic hardware, as attackers can extract secret information by analyzing physical leakages such as power consumption. Techniques like Correlation Power Analysis (CPA) and Differential Power Analysis (DPA), along with modern machine learning-based attacks, have proven effective against secure algorithms. This highlights the need for strong hardware-level countermeasures to reduce leakage and improve security.
+
+\vspace{0.45cm}
+
+\noindent
+This work proposes Binary Decision Diagram (BDD)-based dual-rail logic circuits to mitigate power analysis attacks. The key feature of this approach is balanced switching activity, where each circuit path undergoes an equal number of transitions. By ensuring uniform switching behavior through structured transistor connections, the design minimizes data-dependent variations and reduces the chances of leakage during cryptographic operations.
+
+\vspace{0.45cm}
+
+\noindent
+The system implements the Advanced Encryption Standard (AES) on an FPGA platform with secure inter-board communication using the Serial Peripheral Interface (SPI) protocol. Verilog HDL is used for design and implementation, while simulation and hardware testing validate functionality. The system ensures correct encryption and reliable data transfer between FPGA boards without affecting output integrity.
+
+\vspace{0.45cm}
+
+\noindent
+The integration of BDD-based logic, dual-rail encoding with precharge-evaluate operation, and SPI communication provides an efficient and scalable solution for secure hardware design. This approach reduces side-channel leakage while maintaining performance, making it suitable for practical deployment in modern embedded and cryptographic systems.
+\end{spacing}
+
+% Push footer to the bottom
+\vfill
+
+% Running Footer with horizontal rule
+\noindent\rule{\textwidth}{0.8pt}\\[0.15cm]
+\noindent
+{\small\textbf{B.E.(ECE)-VIII Sem. `A' Sec.}} \hfill {\small\textbf{vii}} \hfill {\small\textbf{2451-22-735-002,005,036}}
+
+\end{document}
